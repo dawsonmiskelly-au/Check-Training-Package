@@ -1,0 +1,16 @@
+# Install Unsloth first — it manages torch, transformers, bitsandbytes internally.
+# Do NOT install torch separately.
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+trl
+peft
+accelerate
+Pillow
+sentencepiece
+protobuf
+huggingface_hub
+
+# System dependencies (not pip — must be installed on the machine):
+# - git (for cloning llama.cpp during GGUF export)
+# - cmake (for building llama.cpp quantize tool)
+# - A C++ compiler (gcc/g++ or clang)
+# - NVIDIA CUDA toolkit (for GPU training)
